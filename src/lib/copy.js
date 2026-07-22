@@ -1,329 +1,329 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Doc §7: TODO el texto visible de la landing sale de este archivo.
 // Los componentes solo leen de aquí; nunca tienen texto propio.
-// Idioma: neerlandés (nl) — copy idéntico a la página original.
+// Idioma: búlgaro (bg) — transcreación adaptada al mercado búlgaro.
 // Convención "*Rich": array de segmentos {t, b?, hi?} para énfasis inline
 // (b = negrita, hi = resaltado verde). Se renderiza con RichText.astro.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const copy = {
   metadata: {
-    lang: 'nl',
-    title: 'Het beste 5⭐ slowcooker kookboek met 141 fantastische recepten',
+    lang: 'bg',
+    title: 'Най-добрата 5⭐ кулинарна книга за слоукукър със 141 фантастични рецепти',
     description:
-      'Zonder kookstress rond 17.00 aan tafel? 141 heerlijke, gezonde slowcooker recepten met gewone supermarkt-ingrediënten en een korte voorbereiding. 16.500+ gezinnen koken mee en geven gemiddeld 5 sterren.',
+      'Искате вечеря без стрес точно в 19:00 ч.? 141 вкусни, здравословни рецепти за слоукукър с обикновени продукти от супера и бърза подготовка. Над 16 500 семейства вече готвят с тях и дават средна оценка 5 звезди.',
     canonical: 'https://bavno-gotvene.crearis.online',
     ogImage: '/og-cover.webp',
     ogType: 'website',
-    ogLocale: 'nl_NL',
-    siteName: 'Slowcooker kookboek',
+    ogLocale: 'bg_BG',
+    siteName: 'Кулинарна книга за слоукукър',
   },
 
   a11y: {
-    skipToContent: 'Ga naar hoofdinhoud',
-    reviewsRegion: 'Reviews van kopers',
-    valuePropsRegion: 'Voordelen in het kort',
-    footerNav: 'Footer',
-    starsLabel: 'sterren',
+    skipToContent: 'Към основното съдържание',
+    reviewsRegion: 'Отзиви от клиенти',
+    valuePropsRegion: 'Предимства накратко',
+    footerNav: 'Долна навигация',
+    starsLabel: 'звезди',
   },
 
   hero: {
-    title: 'Slowcooker kookboek',
-    subtitle: 'Zonder kookstress aan tafel aanschuiven? Dat wil toch iedereen!',
+    title: 'Кулинарна книга за слоукукър',
+    subtitle: 'Да седнете на масата без стрес и бързане? Всеки мечтае за това!',
     socialProof: {
-      strong: '16.500+ gezinnen',
-      rest: ' koken met deze recepten en geven ze gemiddeld',
+      strong: 'Над 16 500 семейства',
+      rest: ' вече готвят по тези рецепти и им дават средна оценка от',
       stars: 5,
     },
-    ctaPrimary: { label: 'Bestel als e-books (pdf)', sub: 'goedkoper én gelijk in je mail' },
-    ctaSecondary: { label: 'Bestel hardcover kookboek', sub: 'levering Nederland' },
-    ctaTertiary: { label: 'Bestel hardcover kookboek', sub: 'levering Buitenland' },
+    ctaPrimary: { label: 'Поръчай като е-книга (PDF)', sub: 'по-изгодно и веднага в имейла ти' },
+    ctaSecondary: { label: 'Поръчай книга с твърди корици', sub: 'с доставка за България' },
+    ctaTertiary: { label: 'Поръчай книга с твърди корици', sub: 'с доставка за чужбина' },
     noteRich: [
-      { t: 'In het hardcover kookboek staan dezelfde recepten als in e-book deel 1 t/m deel 4 (' },
-      { t: '141 recepten totaal', b: true },
-      { t: '). De recepten uit e-book deel 5 en deel 6 (' },
-      { t: '61 nieuwe recepten', b: true },
-      { t: ') zijn alleen digitaal beschikbaar.' },
+      { t: 'Книгата с твърди корици съдържа същите рецепти като е-книгите от част 1 до 4 (' },
+      { t: 'общо 141 рецепти', b: true },
+      { t: '). Рецептите от е-книгите част 5 и 6 (' },
+      { t: '61 нови рецепти', b: true },
+      { t: ') са налични само в дигитален формат.' },
     ],
-    pricePerRecipe: { pre: 'Slechts', amount: '€ 0,38', post: 'cent /recept' },
+    pricePerRecipe: { pre: 'Само', amount: '€ 0,05', post: 'на рецепта' },
     book: {
-      title: 'Slowcooken',
-      subtitle: 'Simpel & Smaakvol',
-      author: 'Joyce van de Pas',
-      badge: '141 recepten',
-      spine: 'SLOWCOOKEN',
+      title: 'Бавно готвене',
+      subtitle: 'Лесно и Вкусно',
+      author: 'Йоана Петрова',
+      badge: '141 рецепти',
+      spine: 'БАВНО ГОТВЕНЕ',
     },
-    imageAlt: 'Slowcooker gerecht met mals stoofvlees en verse groenten, klaar om te serveren',
+    imageAlt: 'Ястие от слоукукър с крехко телешко и пресни зеленчуци, готово за сервиране',
   },
 
   valueProps: [
     {
       icon: 'pot',
-      title: 'Om 17.00 zó aan tafel',
-      text: 'Met ingrediënten uit de supermarkt én duidelijke uitleg.',
+      title: 'Вечерята е готова точно в 19:00',
+      text: 'С обикновени продукти от магазина и ясни, точни инструкции.',
     },
     {
       icon: 'clock',
-      title: 'Korte voorbereiding',
-      text: 'In een handomdraai het eten op tafel.',
+      title: 'Минимална подготовка',
+      text: 'Слагате храната на масата буквално за нула време.',
     },
     {
       icon: 'chef',
-      title: 'Koken als een chefkok',
-      text: 'Restaurant-like, maar dan zelf gemaakt!',
+      title: 'Гответе като истински шеф',
+      text: 'Вкус като в изискан ресторант, но приготвено у дома!',
     },
   ],
 
   story: {
-    heading: 'Stressvrij avondeten',
+    heading: 'Вечеря без грам напрежение',
     paragraphs: [
-      'Heb jij gebrek aan inspiratie als je het avondeten moet bedenken?',
-      'En tijdens de avondspits tijd tekort om lekker, gevarieerd én gezond te koken?',
-      'Ik herken die uitdagingen zo goed!',
+      'Случва ли ви се да блокирате, когато трябва да измислите какво да сготвите за вечеря?',
+      'А в най-лудницата след работа просто не ви стига времето за нещо вкусно, разнообразно и здравословно?',
+      'Толкова добре ви разбирам!',
     ],
     highlightRich: [
-      { t: 'Maar tegenwoordig zet ik binnen no-time ' },
-      { t: 'zalige slowcooker gerechten', hi: true },
-      { t: ' op tafel én ' },
-      { t: 'bespaar veel tijd', hi: true },
+      { t: 'Но днес, благодарение на слоукукъра, за нула време сервирам ' },
+      { t: 'уникално вкусни ястия', hi: true },
+      { t: ' и същевременно ' },
+      { t: 'пестя страшно много време', hi: true },
       { t: '!' },
     ],
-    question: 'Ook stressvrij rond 17.00 aan tafel?',
-    answer: 'Dan zijn mijn gezonde én lekkere recepten (141 in totaal) een uitkomst voor jou!',
-    closer: "Gewoon 's avonds gelijk lekker aan tafel aanschuiven, wie wil dat nu niet?",
-    imageAlt: 'Dampende slowcooker stoofpot met groenten, vers geserveerd op tafel',
+    question: 'Искате ли и вие спокойна вечеря точно в 19:00 ч.?',
+    answer: 'Тогава моите 141 здравословни и вкусни рецепти ще бъдат истинско спасение за вас!',
+    closer: 'Просто сядате на масата и се наслаждавате на хубавата храна – кой не би искал това?',
+    imageAlt: 'Добре сготвена яхния със зеленчуци, димяща от слоукукъра направо на масата',
   },
 
   buyerReviews: {
-    heading: 'Wat andere kopers zeggen:',
+    heading: 'Какво казват хората, които вече я купиха:',
     items: [
       {
-        name: 'Mir',
+        name: 'Мария',
         source: 'Trustpilot',
         rating: 5,
-        title: 'Ik heb onlangs alle drie de ebooks…',
+        title: 'Наскоро си взех и трите е-книги…',
         quote:
-          'Ik heb onlangs alle drie de ebooks gekocht en ben er helemaal weg van! Ik heb er al meerdere keren recepten uit gekookt in mijn crock pot. Het is allemaal even lekker en makkelijk. Ik kook graag voor meerdere dagen en dat gaat super. De recepten zijn duidelijk en ook de bereidingstijd etc klopt goed! Ik wacht op nummer 4!',
+          'Купих си всичките е-книги и съм направо влюбена! Вече няколко пъти готвя по тях в моя крок-пот. Всичко става толкова лесно и вкусно. Обичам да готвя за няколко дни напред и се получава супер. Рецептите са много ясни и времето за готвене е абсолютно точно! Чакам с нетърпение номер 4!',
       },
       {
-        name: 'roelina Watzema-Postma',
+        name: 'Росица Василева',
         source: 'Google',
         rating: 5,
-        title: 'Zeker de moeite waard!',
+        title: 'Определено си заслужава!',
         quote:
-          'Ik heb paar weken terug het slowcooker boek gekocht en wat werd ik er blij van toen ik het boek open sloeg. Het zit boordevol lekkere recepten, het staat goed aangegeven welke stappen je moet volgen en hoelang het in de slowcooker maken. Je vindt ook alle recepten voorin het wordt super aangeven. Zeker de moeite waard om het boek te kopen!!',
+          'Купих книгата преди няколко седмици и много се зарадвах още щом я отворих. Пълна е със страхотни рецепти, стъпките са обяснени перфектно, както и колко време се държи в слоукукъра. В началото има супер удобен списък с рецепти. Определено си заслужава всяка стотинка!!',
       },
       {
-        name: 'Annette Knijff',
+        name: 'Анелия Костова',
         source: 'Trustpilot',
         rating: 5,
-        title: 'Het 3e kookboek van Joyce…',
+        title: 'Третата книга на Йоана…',
         quote:
-          'Het 3e kookboek van Joyce natuurlijk ook gekocht en weer nog meer heerlijke recepten! Haar recepten zijn lekker, overzichtelijk, verse ingrediënten, verrassend! Ik krijg er veel inspiratie van en nog meer plezier om te koken!',
+          'Естествено, че си взех и третата книга на Йоана, и отново съм очарована! Рецептите ѝ са страшно вкусни, прегледни, със свежи продукти и много изненадващи комбинации! Дава ми голямо вдъхновение и сега готвя с още по-голямо удоволствие!',
       },
       {
-        name: 'Luenda',
+        name: 'Любов',
         source: 'Trustpilot',
         rating: 4,
-        title: 'Heerlijke recepten',
+        title: 'Страхотни рецепти',
         quote:
-          'Heerlijke recepten. Eerste recept was gelijk goed gelukt, met andere kookboeken was het niet altijd gelijk goed. Deze kookboeken zijn echt een aanrader.',
+          'Много вкусни неща. Още първата рецепта ми се получи перфектно, което с други книги не винаги се случва от първия път. Препоръчвам ги с две ръце.',
       },
       {
-        name: 'H V',
+        name: 'Христо В.',
         source: 'Google',
         rating: 5,
-        title: 'Het beste boek over slowcooken',
+        title: 'Най-добрата книга за бавно готвене',
         quote:
-          'Heb het kookboek voor mijzelf gekocht en er staan enorm veel lekkere maar makkelijke recepten in. Stap voor stap uitgelegd met eenvoudige ingrediënten. En het lukt altijd! Op het gebied van slowcooken is dit het beste boek dat ik ben tegengekomen! Een aanrader!',
+          'Взех я за себе си и вътре има адски много лесни, но супер вкусни рецепти. Всичко е обяснено стъпка по стъпка с достъпни съставки. И винаги се получава! Това е най-добрата книга за слоукукър, на която съм попадал. Силно препоръчвам!',
       },
       {
-        name: 'Melanie van Dijk',
+        name: 'Милена Димитрова',
         source: 'Trustpilot',
         rating: 5,
-        title: 'Heb deel 1 en 2 gekocht van slowcooker…',
+        title: 'Взех си част 1 и 2 за слоукукър…',
         quote:
-          'Heb deel 1 en 2 gekocht van slowcooker recepten wat een leuk recepten en lekker ik raad iedereen aan om deze te kopen en proberen hartstikke leuk!',
+          'Купих си първите две части и какви само рецепти има вътре! Толкова са вкусни, препоръчвам на всеки да ги вземе и да опита, голямо забавление е!',
       },
     ],
   },
 
   inspiration: {
-    heading: 'Nooit meer inspiratie gebrek',
-    subheading: 'Herken jij dit?',
+    heading: 'Край на чуденето какво да сготвя',
+    subheading: 'Познато ли ви е?',
     paragraphs: [
-      'Je struint uren op internet naar het perfecte gerecht om in de slowcooker te maken.... je denkt iets gevonden te hebben en het uiteindelijke resultaat? Een waterig gerecht met weinig smaak.',
-      'Je bent niet de enige!',
-      'Maar het kan anders.',
+      'Ровите се с часове в интернет, за да намерите перфектното ястие за слоукукъра... мислите си, че сте открили нещо, а накрая резултатът? Водниста манджа без никакъв вкус.',
+      'Не сте сами!',
+      'Но има и друг начин.',
     ],
     highlight:
-      'Met dit kookboek hoef je maar 2x per jaar hetzelfde te eten, zoveel variatie heb je op je aanrecht liggen.',
-    cta: 'Ja, geef mij direct al die inspiratie!',
-    priceLabel: 'Nú voor',
-    price: '€ 54,95',
+      'С тази кулинарна книга ще ви се наложи да ядете едно и също нещо само 2 пъти в годината – толкова много разнообразие ще имате в кухнята си.',
+    cta: 'Да, искам всички тези рецепти веднага!',
+    priceLabel: 'Само сега за',
+    price: '€ 7,90',
   },
 
   benefits: {
-    heading: 'Jouw voordelen op een rijtje',
+    heading: 'Вашите предимства накратко',
     items: [
       {
-        title: "176 pagina's dik",
-        text: "Vol heerlijke recepten (141 stuks!), maar ook met extra tips, kooktijden en meer slowcooker informatie.",
+        title: 'Гаранция от 14 дни',
+        text: 'Пазарувате без риск. Имате 14-дневна гаранция за пълно възстановяване на сумата, ако не сте доволни.',
       },
       {
-        title: 'Gezond en smaakvol',
-        text: 'Gerechten met maximale smaak én op een gezonde basis met veel groenten zonder pakjes en zakjes.',
+        title: 'Здравословно и вкусно',
+        text: 'Ястия с максимален вкус, приготвени със здравословна основа, много зеленчуци и без изкуствени полуфабрикати.',
       },
       {
-        title: 'Gewone ingrediënten',
-        text: 'Alle ingrediënten voor mijn recepten zijn gewoon in de supermarkt verkrijgbaar.',
+        title: 'Обикновени продукти',
+        text: 'Всички съставки за моите рецепти могат да бъдат намерени във всеки квартален супермаркет.',
       },
       {
-        title: 'Korte voorbereiding',
-        text: 'Duidelijke stap-voor-stap uitleg en een korte voorbereidingstijd: zet jij zonder veel werk een heerlijke maaltijd op tafel.',
+        title: 'Бърза подготовка',
+        text: 'С ясни инструкции стъпка по стъпка слагате страхотна вечеря на масата без да висите с часове над печката.',
       },
     ],
     categories: [
-      'Heerlijke stoofvlees recepten',
-      'Verrassende soepen',
-      "Zalig comfort food zoals risotto's, maar ook lekkere pasta-, kip- en visgerechten",
+      'Крехко и сочно телешко варено',
+      'Изненадващо вкусни супи',
+      'Уютна домашна храна като ризото, но и невероятни рецепти с паста, пиле и риба',
     ],
   },
 
   socialReviews: {
-    heading: 'Wat ze op social media zeggen',
+    heading: 'Какво казват хората в социалните мрежи',
     items: [
       {
-        name: 'Carola Van de Steeg',
+        name: 'Камелия Стоянова',
         source: 'WhatsApp',
         quote:
-          'Ja ben er echt zo blij mee, de witlof was echt heerlijk, de boerenkool zo lekker, billetjes in het gras echt een topper. Ik hou wel van de Hollandse pot. Maandag maak ik de chili con carne met een gepofte zoete aardappel.',
+          'Толкова съм щастлива, цикорията стана върховна, къдравото зеле също, а рецептата с наденичките е абсолютен хит. Обожавам домашната кухня. В понеделник ще правя чили кон карне с печени сладки картофи.',
       },
       {
-        name: 'Marjon Spaandonk',
+        name: 'Маргарита Спасова',
         source: 'WhatsApp',
         quote:
-          'Vandaag de Orzo weer op, die is zo ontzettend lekker, ik ben blij met je recepten!',
+          'Днес пак хапнахме орзо, става невероятно вкусно, направо се родих с твоите рецепти!',
       },
       {
-        name: 'Alice Bijl - Roeters',
+        name: 'Алисия Ботева',
         source: 'Facebook',
         quote:
-          'Het is ongelooflijk lekker!! Ik heb nog wat sambal toegevoegd. Mijn man vind het restaurant waardig!!',
+          'Невероятно вкусно!! Добавих и малко люто за разкош. Мъжът ми каза, че е достойно за ресторант!!',
       },
       {
-        name: 'Katrien Gorp',
+        name: 'Катя Георгиева',
         source: 'Facebook',
         quote:
-          'Gisteren het boek binnen gekregen en vandaag de tomatensoep gemaakt. Goedgekeurd door mijn jongens dus die komt vaker op het menu.',
+          'Вчера получих книгата и днес веднага направих доматената супа. Момчетата ми я одобриха на 100%, така че определено влиза в редовното меню.',
       },
       {
-        name: 'Carla Vilé',
+        name: 'Клара Велева',
         source: 'Facebook',
-        quote: 'Vandaag de soto heerlijk!!!!!',
+        quote: 'Днес направих сото супата, жестока е!!!!!',
       },
       {
-        name: 'henkemifsud',
+        name: 'hristo_m',
         source: 'Instagram',
-        quote: 'Mooi boek met heerlijke recepten.',
+        quote: 'Много хубава книга със страхотни рецепти.',
       },
     ],
   },
 
   showcase: {
-    heading: 'Tijd om iedereen omver te blazen met je gerechten!',
+    heading: 'Време е да оберете овациите вкъщи!',
     items: [
-      { title: 'Heerlijke stoofvlees recepten', imageAlt: 'Mals stoofvlees uit de slowcooker met wortels en kruiden' },
-      { title: 'Heerlijke soepen', imageAlt: 'Verse, romige soep bereid in de slowcooker' },
+      { title: 'Топящо се в устата месо', imageAlt: 'Крехко месо от слоукукър с моркови и билки' },
+      { title: 'Фантастични супи', imageAlt: 'Свежа, кремообразна супа, приготвена в слоукукър' },
     ],
   },
 
   finalCta: {
-    kicker: 'Slowcooker chefkok worden met gemak!',
-    heading: 'Laat de slowcooker je keuken veroveren!',
-    lead: 'Ga voor heerlijke, gezonde én gemakkelijke maaltijden.',
+    kicker: 'Станете мастършеф на слоукукъра без усилия!',
+    heading: 'Нека слоукукърът преобрази кухнята ви!',
+    lead: 'Изберете вкусната, здравословна и лесна домашна храна.',
     paragraphs: [
-      'Verander je kookervaring met mijn slowcooker recepten. Ontdek zorgvuldig geselecteerde gerechten, handige tips en trucs, en geniet van smaakvolle maaltijden zonder gedoe.',
-      'Laat je vandaag nog inspireren en bespaar zeeën van tijd met zoeken naar recepten én het koken ervan!',
+      'Променете начина, по който готвите, с моите рецепти. Открийте внимателно подбрани ястия, хитри трикове и се наслаждавайте на вкусни вечери без излишна суета.',
+      'Вдъхновете се още днес и си спестете часове ровене за рецепти и висене над печката!',
     ],
-    cta: 'Bestel nu dit prachtige kookboek',
-    ctaNote: 'Nooit meer zoeken naar lekkere recepten!',
-    imageAlt: 'Het slowcooker kookboek met een dampend gerecht ernaast',
+    cta: 'Поръчай тази невероятна книга сега',
+    ctaNote: '14 дни гаранция! Никога повече не се чудете какво да готвите!',
+    imageAlt: 'Кулинарната книга за слоукукър до прясно сготвено, димящо ястие',
   },
 
   ratings: {
-    heading: 'Reviews',
+    heading: 'Рейтинг',
     items: [
       {
         platform: 'Trustpilot',
         score: '4,8',
         max: '5',
         count: '208',
-        countLabel: 'reviews',
-        note: 'Geclaimd profiel',
+        countLabel: 'отзива',
+        note: 'Потвърден профил',
       },
       {
         platform: 'Google',
         score: '4,8',
         max: '5',
         count: '89',
-        countLabel: 'reviews',
-        note: 'Mediabedrijf in Schijndel',
+        countLabel: 'отзива',
+        note: 'Медийна агенция',
       },
     ],
   },
 
   testimonials: {
-    heading: 'Dit zeggen anderen over mijn recepten',
+    heading: 'Още мнения за моите рецепти',
     items: [
       {
-        title: 'Iedereen eet zijn bord leeg!',
+        title: 'Всички си изяждат порциите докрай!',
         quote:
-          'Sinds ik met jouw kookboek kook eten ook mijn pubers hun bord áltijd leeg zonder te klagen, ze vinden alles lekker!',
+          'Откакто готвя по твоята книга, дори тийнейджърите ми си изяждат всичко без да мрънкат, харесва им абсолютно всичко!',
       },
       {
-        title: 'Ik hoef alleen nog maar te kiezen',
+        title: 'Остава ми само да си избера',
         quote:
-          'Ik vind het fantastisch! Zoveel variatie dat ik alleen maar even hoef te bladeren om weer iets zaligs op tafel te zetten.',
+          'Просто е фантастично! Има толкова голямо разнообразие, че само прелиствам няколко страници и вече знам какво вкусно нещо ще сложа на масата.',
       },
       {
-        title: 'Gewoon top!',
+        title: 'Просто топ!',
         quote:
-          'Nooit gedacht dat ik zo lekker zou kunnen koken, met zo weinig moeite. Het is gewoon top!',
+          'Никога не съм вярвала, че мога да готвя толкова вкусно с толкова малко усилия. Просто топ!',
       },
     ],
-    cta: 'Bestel nu',
+    cta: 'Поръчай сега',
   },
 
   about: {
-    heading: 'Iets meer over mij...',
-    name: 'Joyce van de Pas',
-    intro: 'Hi, ik ben Joyce van de Pas, slowcooker liefhebber van het eerste uur',
+    heading: 'Малко повече за мен...',
+    name: 'Йоана Петрова',
+    intro: 'Здравейте, аз съм Йоана Петрова и съм заклет фен на слоукукъра',
     paragraphs: [
-      "Ik heb de slowcooker jaren geleden ooit ontvangen als cadeau en zo ben ik 'besmet' geraakt met het slowcookervirus.",
-      'Al meer dan 14 jaar experimenteer ik er op los met de slowcooker en ik gebruik hem zeker 3-4 keer per week.',
-      'Ik ben getrouwd en heb twee pubers; lang leve de drukke tijd van opgroeiende kinderen, verschillende roosters qua school en werk én alle diverse trainingstijden van sporten. Zonder de slowcooker zou het avondeten in ons gezin een stuk ingewikkelder en stressvoller zijn!',
-      'Wil je meer over mij weten, over mijn kookboek, slowcooker community of online slowcooker cursus? Stuur me gerust een mailtje, ik help je graag verder!',
+      'Преди години получих слоукукър като подарък и така се "заразих" с магията на бавното готвене.',
+      'Вече повече от 14 години експериментирам смело и използвам уреда поне 3-4 пъти седмично.',
+      'Омъжена съм и имам двама тийнейджъри; да живее лудницата с растящи деца, различни графици за училище и работа, както и стотиците тренировки. Без слоукукъра вечерята в нашето семейство би била много по-сложна и изнервяща задача!',
+      'Искате да научите повече за мен, за книгата ми или за общността ни за бавно готвене? Пишете ми един имейл, ще се радвам да ви помогна!'
     ],
-    cta: 'YESS, ik wil aan de slag met je kookboek',
-    imageAlt: 'Vers en kleurrijk gerecht, met liefde thuis bereid met de slowcooker',
+    cta: 'ДА, искам да започна да готвя по книгата',
+    imageAlt: 'Свежо и цветно ястие, приготвено с любов у дома в слоукукъра',
   },
 
   closing: {
-    heading: 'Recepten in kookboek',
-    primaryCta: 'Kookboek bestellen',
-    altCta: 'Nee, ik ga liever voor de e-books',
+    heading: 'Рецепти в книгата',
+    primaryCta: 'Поръчай книгата',
+    altCta: 'Не, предпочитам само е-книгите',
   },
 
   footer: {
-    brand: 'Slowcooker kookboek',
-    author: 'door Joyce van de Pas',
-    tagline: 'Stressvrij, gezond én lekker koken met de slowcooker — 141 recepten die altijd lukken.',
-    copyright: '© 2026 Mamsatwork · Alle rechten voorbehouden.',
+    brand: 'Кулинарна книга за слоукукър',
+    author: 'от Йоана Петрова',
+    tagline: 'Готвене без стрес, здравословно и вкусно — 141 рецепти, които винаги се получават.',
+    copyright: '© 2026 Mamsatwork · Всички права запазени.',
     links: [
-      { label: 'Algemene voorwaarden', href: '#' },
-      { label: 'Privacybeleid', href: '#' },
-      { label: 'Contact', href: '#' },
+      { label: 'Общи условия', href: '#' },
+      { label: 'Политика за поверителност', href: '#' },
+      { label: 'Контакти', href: '#' },
     ],
   },
 };
